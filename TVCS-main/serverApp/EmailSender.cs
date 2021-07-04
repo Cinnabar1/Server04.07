@@ -133,7 +133,7 @@ namespace serverApp
 
 
                     // отправитель - устанавливаем адрес и отображаемое в письме имя
-                    MailAddress from = new MailAddress("korshunov_serega-99@mail.ru", "Tom");
+                    MailAddress from = new MailAddress("irinakinovar@mail.ru", "Tom");
                     // кому отправляем
                     MailAddress to = new MailAddress(Properties.Settings.Default.email);
                     // создаем объект сообщения
@@ -148,7 +148,7 @@ namespace serverApp
                         m.Body += "<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin: 0; padding: 0\">"
                             + "<tr><th> ID </th> " + "<th> DateTimeS </th>"
                             + "<th> FileName </th>" + "<th> FileNameDest </th>"
-                            + "<th> Operation </th>" + "<th> MngrID </th>"
+                            + "<th> Operation </th>" + "<th> MngrName </th>" + "<th> MngrID </th>"
                             + "<th> ErrStatus </th>" + "<th> Comment </th></tr><tr>";
                         for (int j = 0; j < 10; j++)
                         {
